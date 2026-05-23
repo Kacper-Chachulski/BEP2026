@@ -1,6 +1,9 @@
 import shutil
 import os
-base = r'C:\Users\kacpe\Downloads\AvatarGameBEP-main\AvatarGameBEP-main\AvatarFlaskApp\app\AvatarGame\Build'
+# Compute repository root relative to this script so paths are portable
+script_dir = os.path.dirname(os.path.abspath(__file__))
+repo_root = os.path.abspath(os.path.join(script_dir, '..'))
+base = os.path.join(repo_root, 'AvatarFlaskApp', 'app', 'AvatarGame', 'Build')
 files = [
     ('AvatarGame.wasm.unityweb', 'build.wasm'),
     ('AvatarGame.framework.js.unityweb', 'build.framework.js'),

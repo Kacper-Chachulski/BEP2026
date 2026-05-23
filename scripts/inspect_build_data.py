@@ -1,5 +1,8 @@
-import gzip,os,sys
-p=r'C:\Users\kacpe\Downloads\AvatarGameBEP-main\AvatarGameBEP-main\AvatarFlaskApp\app\AvatarGame\Build\build.data'
+import gzip, os, sys
+# Compute path relative to this script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+repo_root = os.path.abspath(os.path.join(script_dir, '..'))
+p = os.path.join(repo_root, 'AvatarFlaskApp', 'app', 'AvatarGame', 'Build', 'build.data')
 if not os.path.exists(p):
     print('MISSING',p); sys.exit(1)
 with gzip.open(p,'rb') as f:

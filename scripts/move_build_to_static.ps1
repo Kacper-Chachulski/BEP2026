@@ -1,4 +1,6 @@
-$root = 'C:\Users\kacpe\Downloads\AvatarGameBEP-main\AvatarGameBEP-main'
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+$repoRoot = Resolve-Path (Join-Path $scriptDir '..')
+$root = $repoRoot
 $src = Join-Path $root 'AvatarFlaskApp\app\AvatarGame\Build'
 $dst = Join-Path $root 'AvatarFlaskApp\app\AvatarGame\static\Build'
 Write-Host "src: $src"

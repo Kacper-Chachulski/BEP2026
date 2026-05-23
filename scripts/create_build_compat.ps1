@@ -1,4 +1,6 @@
-$build = 'C:\Users\kacpe\Downloads\AvatarGameBEP-main\AvatarGameBEP-main\AvatarFlaskApp\app\AvatarGame\static\Build'
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+$repoRoot = Resolve-Path (Join-Path $scriptDir '..')
+$build = Join-Path $repoRoot 'AvatarFlaskApp\app\AvatarGame\static\Build'
 if (-not (Test-Path $build)) { Write-Error "Build path missing: $build"; exit 1 }
 $map = @{
     'AvatarGame.wasm.unityweb' = 'build.wasm'

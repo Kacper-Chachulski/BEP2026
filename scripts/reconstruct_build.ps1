@@ -1,4 +1,6 @@
-$root = 'C:\Users\kacpe\Downloads\AvatarGameBEP-main\AvatarGameBEP-main'
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+$repoRoot = Resolve-Path (Join-Path $scriptDir '..')
+$root = $repoRoot
 $src1 = Join-Path $root 'CU.BE\Library\Bee\artifacts\WebGL\build\debug_WebGL_wasm'
 $src2 = Join-Path $root 'CU.BE\Library\Bee\artifacts\WebGL'
 $dest = Join-Path $root 'AvatarFlaskApp\app\AvatarGame\Build'
