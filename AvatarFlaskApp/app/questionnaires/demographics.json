@@ -1,0 +1,69 @@
+{
+  "title": "Demographics",
+  "code": "DEM",
+  "questions": [
+    {
+      "questiontype": "textview",
+      "title": "",
+      "text": "Please answer the following demographic questions."
+    },
+    {
+      "questiontype": "num_field",
+      "id": "age",
+      "instructions": "Age",
+      "required": true,
+      "min": 13,
+      "max": 120
+    },
+    {
+      "questiontype": "radiolist",
+      "id": "gender",
+      "instructions": "Gender",
+      "required": true,
+      "labels": [
+        "Female",
+        "Male",
+        "Prefer not to say"
+      ]
+    },
+    {
+      "questiontype": "radiolist",
+      "id": "exp_gaming",
+      "instructions": "Overall experience in gaming",
+      "required": true,
+      "labels": [
+        "None",
+        "Novice",
+        "Some experience",
+        "Experienced",
+        "Expert"
+      ]
+    },
+    {
+      "questiontype": "radiolist",
+      "id": "exp_pc",
+      "instructions": "Experience specifically with PC gaming",
+      "required": true,
+      "labels": [
+        "None",
+        "Novice",
+        "Some experience",
+        "Experienced",
+        "Expert"
+      ]
+    },
+    {
+      "questiontype": "radiolist",
+      "id": "exp_runner",
+      "instructions": "Experience with runner-style games",
+      "required": true,
+      "labels": [
+        "None",
+        "Novice",
+        "Some experience",
+        "Experienced",
+        "Expert"
+      ]
+    }
+  ]
+}

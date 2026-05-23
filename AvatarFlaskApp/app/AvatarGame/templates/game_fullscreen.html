@@ -1,0 +1,27 @@
+{% extends "unity_webgl_fullscreen.html" %}
+
+{% set unityloader_path = "AvatarGame/AvatarGame.loader.js" %}
+{% set unity_parameters = {
+        "dataUrl": "AvatarGame/AvatarGame.data",
+        "frameworkUrl": "AvatarGame/AvatarGame.framework.js",
+        "codeUrl": "AvatarGame/AvatarGame.wasm",
+        "streamingAssetsUrl": "StreamingAssets",
+        "companyName": "TUE",
+        "productName": "Avatar Runner",
+        "productVersion": "1.0"
+      } %}
+
+{# Note that builds compressed with Brotli require HTTPS. This example uses gzip. #}
+
+{% block content_extra %}
+    <script type="text/javascript">
+        // This will only work if the game is fully loaded, so I've put it on a 5 second timer.
+        // You can check whether gameInstance is null to determine if it is loaded.
+        setTimeout(function() {
+            if (gameInstance == null)
+                return;
+            //says to manager object to call setparticipant id function
+            gameInstance.SendMessage('_Manager', 'SetParticipantID', {{ session['participantID'] }})
+        }, 5000);
+    </script>
+{% endblock %}

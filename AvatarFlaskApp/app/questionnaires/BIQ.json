@@ -1,0 +1,164 @@
+{
+  "title": "Post-Game Questionnaire",
+  "code": "",
+  "questions": [
+    {
+      "questiontype": "textview",
+      "title": "",
+      "text": "Please answer the questions about your body image"
+    },
+    {
+      "questiontype": "radiogrid",
+      "instructions": "I think of myself as",
+      "id": "radio_1",
+      "shuffle": false,
+      "required": true,
+      "labels": [
+        "Very much, often",
+        "Fairly, fairly often",
+        "In between, neither one",
+        "Fairly, fairly often",
+        "Very much, often"
+      ],
+      "q_text": [
+        {
+          "id": "q1",
+          "text": "Bad health"
+        },
+        {
+          "id": "q2",
+          "text": "Physically attractive"
+        },
+        {
+          "id": "q3",
+          "text": "Source of pleasure"
+        },
+        {
+          "id": "q4",
+          "text": "Feminine"
+        },
+        {
+          "id": "q5",
+          "text": "Pure, clean"
+        },
+        {
+          "id": "q6",
+          "text": "Expressing fear"
+        },
+        {
+          "id": "q7",
+          "text": "Empty"
+        },
+        {
+          "id": "q8",
+          "text": "Something to be touched"
+        },
+        {
+          "id": "q9",
+          "text": "Indifferent, cold"
+        },
+        {
+          "id": "q10",
+          "text": "Expressing anger"
+        },
+        {
+          "id": "q11",
+          "text": "Expressive"
+        },
+        {
+          "id": "q12",
+          "text": "Something to be hidden"
+        },
+        {
+          "id": "q13",
+          "text": "Calm, serene"
+        },
+        {
+          "id": "q14",
+          "text": "Old"
+        },
+        {
+          "id": "q15",
+          "text": "Sexy"
+        },
+        {
+          "id": "q16",
+          "text": "Frail"
+        },
+        {
+          "id": "q17",
+          "text": "Cheerful"
+        },
+        {
+          "id": "q18",
+          "text": "Something not to be looked at"
+        },
+        {
+          "id": "q19",
+          "text": "Energic"
+        }
+
+      ],
+      "right_value" :
+      [
+        {
+        "text": "Healthy"
+        },
+        {
+          "text": "Physically unattractive"
+        },
+        {
+          "text": "Source of displeasure"
+        },
+        {
+          "text": "Masculine"
+        },
+        {
+          "text": "Impure, dirty"
+        },
+        {
+          "text": "Expressing daring"
+        },
+        {
+          "text": "Full"
+        },
+        {
+          "text": "Something not to be touched"
+        },
+        {
+          "text": "Tender, loving"
+        },
+        {
+          "text": "Expressing appeasing"
+        },
+        {
+          "text": "Unexpressive"
+        },
+        {
+          "text": "Something to be shown"
+        },
+        {
+          "text": "Nervous, worried"
+        },
+        {
+          "text": "Young"
+        },
+        {
+          "text": "Not sexy"
+        },
+        {
+          "text": "Robust, resistant"
+        },
+        {
+          "text": "Sad"
+        },
+        {
+          "text": "Something to be looked at"
+        },
+        {
+          "text": "Not energic"
+        }
+      ]
+    }
+  ]
+}

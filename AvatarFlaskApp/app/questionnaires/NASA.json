@@ -1,0 +1,66 @@
+{
+  "title": "Post-Game Questionnaire",
+  "code": "",
+  "questions": [
+    {
+      "questiontype": "textview",
+      "text": "Please answer the questions about your game experience"
+    },
+    {
+      "instructions": "Share your opinion on these statements",
+      "questiontype": "radiogrid",
+      "id": "radio_1",
+      "shuffle": false,
+      "required": true,
+      "labels": [
+        "Very Low",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Very High"
+      ],
+      "q_text": [
+        {
+          "id": "q1",
+          "text": "How mentally demanding was the task?"
+        },
+        {
+          "id": "q2",
+          "text": "How physically demanding was the task"
+        },
+        {
+          "id": "q3",
+          "text": "How hurried or rushed was the pace of the task?"
+        },
+        {
+          "id": "q4",
+          "text": "How successful were you in accomplishing what you were asked to do?"
+        },
+        {
+          "id": "q5",
+          "text": "How hard did you have to work to accomplish your level of performance?"
+        },
+        {
+          "id": "q6",
+          "text": "How insecure, discouraged, irritated, stressed, and annoyed were you?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "title": "Player-Avatar Identification",
+  "instructions": "Here follows a questionnaire about your avatar",
+  "code": "",
+  "questions": [
+    {
+      "questiontype": "textview",
+      "title": "Avatar",
+      "text": "Please answer the questions about your game experience"
+    },
+    {
+      "questiontype": "radiogrid_compare",
+      "instructions": "Share your opinion on these questions",
+      "id": "radio_1",
+      "shuffle": false,
+      "required": true,
+      "labels": [
+        "Strongly disagree",
+        "-2",
+        "-1",
+        "0",
+        "1",
+        "2",
+        "Strongly Agree"
+      ],
+      "q_text": [
+        {
+          "id": "FL1",
+          "text": "When my character is facing danger in the game, I feel nervous"
+        },
+        {
+          "id": "FL2",
+          "text": "I feel the same disappointment when my character experiences a failure in the game"
+        },
+        {
+          "id": "FL3",
+          "text": "When my character achieves his/her goals, I feel happy"
+        },
+        {
+          "id": "FL4",
+          "text": " I feel the same joy my character experiences when a task is accomplished"
+        },
+        {
+          "id": "FL5",
+          "text": "When my character was respected with other gamers, I feel proud"
+        },
+        {
+          "id": "FL6",
+          "text": "When my character was treated unfairly in the game, I feel angry"
+        },
+        {
+          "id": "FL7",
+          "text": "When my character was laughed at for low level or poor equipment, I feel upset"
+        },
+        {
+          "id": "FL8",
+          "text": "I feel the same excitement my character experiences when succeeding in a difficult quest"
+        },
+        {
+          "id": "AB1",
+          "text": " I have forgotten my surroundings during the game"
+        },
+        {
+          "id": "AB2",
+          "text": " I have forgotten myself during the game"
+        },
+        {
+          "id": "AB3",
+          "text": "I feel as if I am physically in the game world during the game"
+        },
+        {
+          "id": "AB4",
+          "text": "The problems I face are the same problems that my character faces"
+        },
+        {
+          "id": "PA1",
+          "text": "I never regret that I play my game character"
+        },
+        {
+          "id": "PA2",
+          "text": "I am proud to play the character I am playing now"
+        },
+        {
+          "id": "PA3",
+          "text": "Other gamers are happy to be friends with my game character"
+        },
+        {
+          "id": "PA4",
+          "text": "My co-gamers have high respect for my character"
+        },
+        {
+          "id": "PA5",
+          "text": "It is worthy to play my character"
+        },
+        {
+          "id": "PA6",
+          "text": "My co-gamers like the character I play"
+        },
+        {
+          "id": "PA7",
+          "text": "My co-gamers consider my character to be attractive"
+        },
+        {
+          "id": "ID1",
+          "text": "The characters I play reflect who I am"
+        },
+        {
+          "id": "ID2",
+          "text": "My character and I are one and the same"
+        },
+        {
+          "id": "ID3",
+          "text": "The characters I play influence the way I feel about myself"
+        },
+        {
+          "id": "ID4",
+          "text": " The characters I play are important to my sense of what kind of a person I am"
+        }
+      ]
+    }
+  ]
+}

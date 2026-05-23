@@ -1,0 +1,113 @@
+{
+  "title": "Questionnaire",
+  "instructions": "Please rate each video game experience....",
+  "code": "",
+  "questions": [
+    {
+      "questiontype": "textview",
+      "title": "Enjoyment",
+      "text": "Tell us what your experience was of the game"
+    },
+    {
+      "questiontype": "radiogrid",
+      "instructions": "Share your opinion on each level",
+      "id": "radio_1",
+      "shuffle": true,
+      "required": true,
+      "labels": [
+        "I hate it!",
+        "",
+        "Neutral",
+        "",
+        "I love it!"
+      ],
+      "q_text": [
+        {
+          "id": "q_1",
+          "text": "Level 1"
+        },
+        {
+          "id": "q_2",
+          "text": "Level 2"
+        },
+        {
+          "id": "q_3",
+          "text": "Level 3"
+        }
+      ]
+    },
+    {
+      "questiontype": "radiolist",
+      "instructions": "What was your favourite level",
+      "id": "radiolist_1",
+      "required": true,
+      "labels": [
+        "Level 1",
+        "Level 2",
+        "Level 3"
+      ]
+    },
+    {
+      "questiontype": "checklist",
+      "instructions": "What were your favourite levels",
+      "id": "checklist_1",
+      "shuffle": true,
+      "horizontal": true,
+      "questions": [
+        {
+          "id": "cl_1",
+          "text": "Level 1"
+        },
+        {
+          "id": "cl_2",
+          "text": "Level 2"
+        },
+        {
+          "id": "cl_3",
+          "text": "Level 3"
+        }
+      ]
+    },
+    {
+      "questiontype": "slider",
+      "instructions": "On a scale, how much fun did you have",
+      "id": "slider_1",
+      "left": "left label",
+      "right": "right label",
+      "tick_count": 5,
+      "width": 500
+    },
+    {
+      "questiontype": "field",
+      "instructions": "enter text",
+      "placeholder": "What was the first emotion you had when you opened this game",
+      "id": "input_1",
+      "required": true
+    },
+    {
+      "questiontype": "num_field",
+      "instructions": "How would you rate this game from 1 to 10",
+      "id": "number_field",
+      "required": true
+    },
+    {
+      "id": "dropdownexample",
+      "questiontype": "drop_down",
+      "instructions": "Choose which level you enjoyed the most",
+      "items": [
+        "Level 1",
+        "Level 2",
+        "Level 3"
+      ],
+      "required": true
+    },
+    {
+      "questiontype": "multi_field",
+      "id": "big",
+      "placeholder": "Only positive experiences allowed",
+      "instructions": "Share your thoughts on how much fun you had playing this game.",
+      "height": "100",
+      "required": true
+    }
+  ]
+}

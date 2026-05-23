@@ -1,0 +1,172 @@
+{
+  "title": "Post-Game Questionnaire",
+  "instructions": "",
+  "code": "",
+  "questions": [
+    {
+      "questiontype": "textview",
+      "title": "",
+      "text": "Please answer the questions about your game experience"
+    },
+    {
+      "questiontype": "radiogrid",
+      "instructions": "For each of the following statements, please indicate how true it is for you",
+      "id": "radio_1",
+      "shuffle": false,
+      "required": true,
+      "labels": [
+        "Not at all true",
+        "",
+        "",
+        "Somewhat true",
+        "",
+        "",
+        "Very true"
+      ],
+      "q_text": [
+        {
+          "id": "q1",
+          "text": "I enjoyed doing this activity very much"
+        },
+        {
+          "id": "q2",
+          "text": "This activity was fun to do."
+        },
+        {
+          "id": "q3",
+          "text": "I thought this was a boring activity."
+        },
+        {
+          "id": "q4",
+          "text":"This activity did not hold my attention at all."
+        },
+        {
+          "id": "q5",
+          "text": "I would describe this activity as very interesting."
+        },
+        {
+          "id": "q6",
+          "text": "I thought this activity was quite enjoyable."
+        },
+        {
+          "id": "q7",
+          "text": "While I was doing this activity, I was thinking about how much I enjoyed it."
+        },
+        {
+          "id": "q8",
+          "text": "I put a lot of effort into this."
+        },
+        {
+          "id": "q9",
+          "text": "I didn't try very hard to do well at this activity. "
+        },
+        {
+          "id": "q10",
+          "text": "I tried very hard on this activity."
+        },
+        {
+          "id": "q11",
+          "text": "It was important to me to do well at this task."
+        },
+        {
+          "id": "q12",
+          "text": "I didn't put much energy into this."
+        },
+        {
+          "id": "q13",
+          "text": "I did not feel nervous at all while doing this. "
+        },
+        {
+          "id": "q14",
+          "text": "I felt very tense while doing this activity."
+        },
+        {
+          "id": "q15",
+          "text": "I was very relaxed in doing these."
+        },
+        {
+          "id": "q16",
+          "text": "I was anxious while working on this task."
+        },
+        {
+          "id": "q17",
+          "text": "I felt pressured while doing these."
+        },
+        {
+          "id": "q18",
+          "text": "I believe this activity could be of some value to me."
+        }
+      ]
+    },
+    {
+      "questiontype": "multi_field",
+      "id": "useful",
+      "placeholder": "",
+      "instructions": "I think that doing this activity is useful for",
+      "height": "50",
+      "required": true
+    },
+    {
+      "questiontype": "multi_field",
+      "id": "important",
+      "placeholder": "",
+      "instructions": "I think this is important to do because it can",
+      "height": "50",
+      "required": true
+    },
+    {
+      "questiontype": "radiogrid",
+      "id": "radio_2",
+      "shuffle": false,
+      "required": true,
+      "labels": [
+        "Not at all true",
+        "",
+        "",
+        "Somewhat true",
+        "",
+        "",
+        "Very true"
+      ],
+      "q_text": [
+        {
+          "id": "q19",
+          "text": "I would be willing to do this again because it has some value to me."
+        }
+      ]
+    },
+    {
+      "questiontype": "multi_field",
+      "id": "help",
+      "placeholder": "",
+      "instructions": "I think doing this activity could help me to",
+      "height": "50",
+      "required": true
+    },
+    {
+      "questiontype": "radiogrid",
+      "id": "radio_3",
+      "shuffle": false,
+      "required": true,
+      "labels": [
+        "Not at all true",
+        "",
+        "",
+        "Somewhat true",
+        "",
+        "",
+        "Very true"
+      ],
+      "q_text": [
+        {
+          "id": "q20",
+          "text": "I believe doing this activity could be beneficial to me."
+        },
+        {
+          "id": "q21",
+          "text": "I think this is an important activity."
+        }
+      ]
+    }
+  ]
+}

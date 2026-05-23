@@ -1,0 +1,12 @@
+{
+  "title": "Post-Game Questionnaire",
+  "instructions": "",
+  "code": "",
+  "questions": [
+    {
+      "questiontype": "textview",
+      "title": "",
+      "text": "Thank you for progressing to this section of our research. As we delve deeper into your experiences and perceptions, this next section will focus on your attitudes towards appearance and the image of your body. Please note that some of the questions you'll encounter may reference media formats or contexts that might seem a bit dated, such as TV shows or magazines. While we recognize that today's dominant influences might be platforms like social media, the questionnaire we're using is standardized and has certain historical elements that we can't alter. We kindly ask that when responding, you try to adapt and contextualize these items in a way that makes sense for your own experiences. For instance, if a question mentions 'magazines', or 'TV', you might think of similar influences from contemporary sources relevant to you. Your genuine and thoughtful answers are crucial for our study's consistency and comparability to past research. Let's move on to the questions! "
+    }
+  ]
+}

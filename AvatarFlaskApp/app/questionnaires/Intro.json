@@ -1,0 +1,12 @@
+{
+  "title": "Post-Game Questionnaire",
+  "instructions": "",
+  "code": "",
+  "questions": [
+    {
+      "questiontype": "textview",
+      "title": "",
+      "text": "Thank you for taking the time to participate in our academic research through the gaming experience and avatar interaction. We now would like to gather your insights and perceptions through a series of questionnaires. This part is crucial for our study, and we deeply value your input. It is essential that you answer each question honestly. There are no right or wrong answers; we are interested in your genuine thoughts and feelings. Please ensure you answer all questions. Avoid guessing or answering randomly, as accurate responses help us in drawing meaningful conclusions from this research. Completing the questionnaires should take around 30 minutes. We appreciate your dedication and time. Please proceed with the questions when you're ready."
+    }
+  ]
+}

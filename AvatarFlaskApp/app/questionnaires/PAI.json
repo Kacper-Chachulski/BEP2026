@@ -1,0 +1,162 @@
+{
+  "title": "Post-Game Questionnaire",
+  "instructions": "",
+  "code": "",
+  "questions": [
+    {
+      "questiontype": "textview",
+      "title": "",
+      "text": "Please answer the questions about your game experience"
+    },
+    {
+      "questiontype": "radiogrid",
+      "instructions": "Share your opinion on these statements",
+      "id": "radio_1",
+      "shuffle": false,
+      "required": true,
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Slightly disagree",
+        "Neither disagree, neither agree",
+        "Slightly agree",
+        "Agree",
+        "Strongly agree"
+      ],
+      "q_text": [
+        {
+          "id": "q1",
+          "text": "Playing the game was meaningful to me."
+        },
+        {
+          "id": "q2",
+          "text": "The game felt relevant to me."
+        },
+        {
+          "id": "q3",
+          "text": "Playing this game was valuable to me."
+        },
+        {
+          "id": "q4",
+          "text": "I wanted to explore how the game evolved."
+        },
+        {
+          "id": "q5",
+          "text": "I wanted to find out how the game progressed."
+        },
+        {
+          "id": "q6",
+          "text": "I felt eager to discover how the game continued."
+        },
+        {
+          "id": "q7",
+          "text": "I felt I was good at playing this game."
+        },
+        {
+          "id": "q8",
+          "text": "I felt capable while playing the game."
+        },
+        {
+          "id": "q9",
+          "text": "I felt a sense of mastery playing this game."
+        },
+        {
+          "id": "q10",
+          "text": "I felt free to play the game in my own way."
+        },
+        {
+          "id": "q11",
+          "text": "I felt like I had choices regarding how I wanted to play this game."
+        },
+        {
+          "id": "q12",
+          "text": "I felt a sense of freedom about how I wanted to play this game."
+        },
+        {
+          "id": "q13",
+          "text": "I was no longer aware of my surroundings while I was playing."
+        },
+        {
+          "id": "q14",
+          "text": "I was immersed in the game."
+        },
+        {
+          "id": "q15",
+          "text": "I was fully focused on the game."
+        },
+        {
+          "id": "q16",
+          "text": "The game informed me of my progress in the game."
+        },
+        {
+          "id": "q17",
+          "text": "I could easily assess how I was performing in the game."
+        },
+        {
+          "id": "q18",
+          "text": "The game gave clear feedback on my progress towards the goals."
+        },
+        {
+          "id": "q19",
+          "text": "I enjoyed the way the game was styled."
+        },
+        {
+          "id": "q20",
+          "text": "I liked the look and feel of the game."
+        },
+        {
+          "id": "q21",
+          "text": "I appreciated the aesthetics of the game."
+        },
+        {
+          "id": "q22",
+          "text": "The game was not too easy and not too hard to play."
+        },
+        {
+          "id": "q23",
+          "text": "The game was challenging but not too challenging."
+        },
+        {
+          "id": "q24",
+          "text": "The challenges in the game were at the right level of difficulty for me."
+        },
+        {
+          "id": "q25",
+          "text": "It was easy to know how to perform actions in the game."
+        },
+        {
+          "id": "q26",
+          "text": "The actions to control the game were clear to me."
+        },
+        {
+          "id": "q27",
+          "text": "I thought the game was easy to control."
+        },
+        {
+          "id": "q28",
+          "text": "I grasped the overall goal of the game."
+        },
+        {
+          "id": "q29",
+          "text": "The goals of the game were clear to me."
+        },
+        {
+          "id": "q30",
+          "text": "I understood the objectives of the game."
+        },
+        {
+          "id": "q31",
+          "text": "I liked playing the game"
+        },
+        {
+          "id": "q32",
+          "text": "The game was entertaining"
+        },
+        {
+          "id": "q33",
+          "text": "I had a good time playing this game"
+        }
+      ]
+    }
+  ]
+}

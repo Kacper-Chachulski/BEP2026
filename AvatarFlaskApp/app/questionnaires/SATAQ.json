@@ -1,0 +1,148 @@
+{
+  "title": "Post-Game Questionnaire",
+  "instructions": "",
+  "code": "",
+  "questions": [
+    {
+      "questiontype": "textview",
+      "title": "",
+      "text": "Please answer the questions about your body image"
+    },
+    {
+      "questiontype": "radiogrid",
+      "instructions": "Share your opinion on these statements",
+      "id": "radio_1",
+      "shuffle": false,
+      "required": true,
+      "labels": [
+        "Disagree",
+        "",
+        "Neutral",
+        "",
+        "Agree"
+      ],
+      "q_text": [
+        {
+          "id": "q_1",
+          "text": "TV programs are an important source of information about fashion and 'being attractive.'"
+        },
+        {
+          "id": "q_2",
+          "text": "I've felt pressure from TV or magazines to lose weight."
+        },
+        {
+          "id": "q_3",
+          "text": "I would like my body to look like the people who are on TV."
+        },
+        {
+          "id": "q_4",
+          "text": "I compare my body to the bodies of TV and movie stars."
+        },
+        {
+          "id": "q_5",
+          "text": "TV commercials are an important source of information about fashion and 'being attractive.'"
+        },
+        {
+          "id": "q_6",
+          "text": "I’ve felt pressure from TV or magazines to look pretty."
+        },
+        {
+          "id": "q_7",
+          "text": "I would like my body to look like the models who appear in magazines."
+        },
+        {
+          "id": "q_8",
+          "text": "I compare my appearance to the appearance of TV and movie stars."
+        },
+        {
+          "id": "q_9",
+          "text": "Music videos on TV are an important source of information about fashion and 'being attractive.'"
+        },
+        {
+          "id": "q_10",
+          "text": "I've felt pressure from TV and magazines to be thin."
+        },
+        {
+          "id": "q_11",
+          "text": "I would like my body to look like the people who are in the movies."
+        },
+        {
+          "id": "q_12",
+          "text": "I compare my body to the bodies of people who appear in magazines."
+        },
+        {
+          "id": "q_13",
+          "text": "Magazine articles are an important source of information about fashion and 'being attractive.'"
+        },
+        {
+          "id": "q_14",
+          "text": "I've felt pressure from TV or magazines to have a perfect body."
+        },
+        {
+          "id": "q_15",
+          "text": "I wish I looked like the models in music videos. "
+        },
+        {
+          "id": "q_16",
+          "text": "I compare my appearance to the appearance of people in magazines."
+        },
+        {
+          "id": "q_17",
+          "text": "Magazine advertisements are an important source of information about fashion and 'being attractive.'"
+        },
+        {
+          "id": "q_18",
+          "text": "I've felt pressure from TV or magazines to diet."
+        },
+        {
+          "id": "q_19",
+          "text": "I wish I looked as athlethic as the people in magazines."
+        },
+        {
+          "id": "q_20",
+          "text": "I compare my body to that of people in 'good shape.'"
+        },
+        {
+          "id": "q_21",
+          "text": "Pictures in magazines are an important source of information about fashion and 'being attractive.'"
+        },
+        {
+          "id": "q_22",
+          "text": "I've felt pressure from TV or magazines to exercise."
+        },
+        {
+          "id": "q_23",
+          "text": "I wish I looked as athletic as sports stars."
+        },
+        {
+          "id": "q_24",
+          "text": "I compare my body to that of people who are athletic."
+        },
+        {
+          "id": "q_25",
+          "text": "Movies are an important source of information about fashion and 'being attractive.'"
+        },
+        {
+          "id": "q_26",
+          "text": "I’ve felt pressure from TV or magazines to change my appearance.'"
+        },
+        {
+          "id": "q_27",
+          "text": "I try to look like the people on TV."
+        },
+        {
+          "id": "q_28",
+          "text": "Movies stars an important source of information about fashion and 'being attractive.'"
+        },
+        {
+          "id": "q_29",
+          "text": "Famous people are an important source of information about fashion and 'being attractive.'"
+        },
+        {
+          "id": "q_30",
+          "text": "I try to look like sports athletes."
+        }
+      ]
+    }
+  ]
+}
