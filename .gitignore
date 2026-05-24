@@ -1,0 +1,32 @@
+# Unity
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+UserSettings/
+MemoryCaptures/
+*.csproj
+*.unityproj
+*.sln
+*.user
+
+# Python venv
+bofs_venv/
+venv/
+env/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+Logs/
+
+# Misc
+*.log
+.pytest_cache/
+.mypy_cache/

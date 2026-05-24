@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+  <head><meta charset='utf-8'><title>Unity Build</title></head>
+  <body>
+    <canvas id="unity-canvas"></canvas>
+    <script src="Build/A"></script>
+    <script>
+      createUnityInstance(document.querySelector('#unity-canvas'), {
+        dataUrl: 'Build/AvatarGame.data.unityweb',
+        frameworkUrl: 'Build/AvatarGame.framework.js.unityweb',
+        codeUrl: 'Build/AvatarGame.wasm.unityweb',
+      }, (progress)=>{})
+      .then(()=>{})
+      .catch(alert);
+    </script>
+  </body>
+</html>

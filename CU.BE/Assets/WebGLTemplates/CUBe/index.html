@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{{{ PRODUCT_NAME }}}</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./BOFS_static/style.css" type="text/css" />
+
+    <script src="./BOFS_static/js/jquery-3.4.1.min.js"></script>
+    <script src="./BOFS_static/js/popper.min.js"></script>
+    <script src="./BOFS_static/js/bootstrap.min.js"></script>
+    <style>
+      #loading {
+        background-image: url("./BOFS_static/loading.gif");
+        background-repeat: no-repeat;
+        background-position: center 20px;
+        height: 120px;
+        position: absolute;
+        top: 240px;
+        left: 50%;
+        text-align: center;
+        padding-top: 90px;
+        padding-left: 40px;
+        padding-right: 40px;
+        display: inline;
+        transform: translate(-50%, 0%);
+        border: 1px solid #eeeeee;
+        background-color: #f7f7f7;
+        border-radius: 8px;
+      }
+
+      .template-wrap {
+        position: absolute;
+        left: 50%;
+        margin-left: -480px;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body style="text-align: center; padding: 0; border: 0; margin: 0">
+    <div class="title-bar">
+      <div class="title-text">
+        <div style="float: left; padding-top: 2px">CUBe</div>
+      </div>
+    </div>
+    <br />
+
+    <div
+      style="width: 967px; margin-left: auto; margin-right: auto"
+      class="content"
+    >
+      <div class="questions">
+        <div class="template-wrap clear">
+          <div id="loading">Loading...</div>
+          <canvas id="unity-canvas" width="{{{ WIDTH }}}" height="{{{ HEIGHT }}}" style="width:{{{ WIDTH }}}px; height:{{{ HEIGHT }}}px; background: {{{ BACKGROUND_FILENAME ? 'url(\'Build/' + BACKGROUND_FILENAME.replace(/'/g, '%27') + '\') center / cover' : BACKGROUND_COLOR }}}">
+          </canvas>
+        </div>
+        <script src="Build/{{{ LOADER_FILENAME }}}"></script>
+        <script>
+          if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            // Mobile device style: fill the whole browser client area with the game canvas:
+            var meta = document.createElement('meta');
+            meta.name = 'viewport';
+            meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+            document.getElementsByTagName('head')[0].appendChild(meta);
+
+            var canvas = document.querySelector("#unity-canvas");
+            canvas.style.width = "100%";
+            canvas.style.height = "100%";
+            canvas.style.position = "fixed";
+
+            document.body.style.textAlign = "left";
+          }
+
+          function UnityProgress (progress) {
+                let loading = document.getElementById("loading");
+
+                if (progress < 1) {
+                    progressPercent = Math.round(progress * 100);
+                    loading.innerHTML = "Downloading... (" + progressPercent + "%)";
+                    loading.hidden = false;
+                }
+                else {
+                    loading.hidden = true;
+                }
+          }
+
+          createUnityInstance(document.querySelector("#unity-canvas"), {
+            dataUrl: "Build/{{{ DATA_FILENAME }}}",
+            frameworkUrl: "Build/{{{ FRAMEWORK_FILENAME }}}",
+    #if USE_WASM
+            codeUrl: "Build/{{{ CODE_FILENAME }}}",
+    #endif
+    #if MEMORY_FILENAME
+            memoryUrl: "Build/{{{ MEMORY_FILENAME }}}",
+    #endif
+    #if SYMBOLS_FILENAME
+            symbolsUrl: "Build/{{{ SYMBOLS_FILENAME }}}",
+    #endif
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: {{{ JSON.stringify(COMPANY_NAME) }}},
+            productName: {{{ JSON.stringify(PRODUCT_NAME) }}},
+            productVersion: {{{ JSON.stringify(PRODUCT_VERSION) }}},
+            // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+            // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+            },
+            (progress) => { UnityProgress(progress) }
+          ).then((unityInstance) => {
+            unityInstance.SendMessage("MainMenu", "InitGame", "PID=1;Name=Participant;Gender_Male=1;Gender_Female=2;Gender_NonBinary=3;Weight_Fit=4;Weight_Average=5;Weight_Large=6;Age_Young=7;Age_Adult=8;Age_Old=9;Skin_Fair=10;Skin_Brown=11;Skin_Dark=12;Height_Short=13;Height_Average=14;Height_Tall=15");
+          }).catch((message) => {
+            alert(message);
+          });
+        </script>
+
+        <script>
+          function EndGame() {
+            window.location.href = "/redirect_next_page";
+          }
+        </script>
+      </div>
+    </div>
+    <script type="text/javascript">
+      setInterval(function () {
+        $.ajax({
+          url: "/user_active",
+          dataType: "html",
+          success: function (data) {},
+        });
+      }, 30000);
+
+      // Redirect user to the correct page if they are on the wrong page.
+      window.onload = function () {
+        if (window.location.pathname.includes("admin")) {
+          return;
+        }
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState === 4 && this.status === 200) {
+            if (window.location.pathname.substr(1) != this.responseText) {
+              window.location.href = "/" + this.responseText;
+            }
+          }
+        };
+        xhttp.open("GET", "/current_url", true);
+        xhttp.send();
+      };
+      window.onunload = function () {};
+    </script>
+  </body>
+</html>
